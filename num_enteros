@@ -1,0 +1,19 @@
+#include <stdio.h>
+int numero_x, numero_a;
+int main () {
+
+for(;;) {
+    printf("Por favor digite un numero entero: ");
+scanf("%d", &numero_x);
+    printf("Por favor digite otro numero entero: ");
+    scanf("%d", &numero_a);
+
+if(numero_x > numero_a) {
+    printf("El numero %d es mayor que %d.\n\n >>>FIN DEL CODIGO<<<", numero_x, numero_a);
+    break;
+}
+ else if (numero_x < numero_a) {
+     printf("El numero %d no es mayor que %d.\n\n ^^^INTENTAR DE NUEVO^^^\n\n", numero_x, numero_a);
+     }
+}  
+    return 0; }
