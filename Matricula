@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main () {
+    char realizar_pago, matricula_abierta, cupo_disponible;
+
+    printf(">>>PROCESO DE MATRICULAS<<<\n\n");
+    printf("Va realizar tu proceso de pago? (s/n): ");
+    scanf("%c", &realizar_pago);
+
+    if (realizar_pago == 'n') {
+        printf("Debes de realizar tu proceso de pago para poder matricularte.\n");
+   return 0; } else if (realizar_pago == 's') {
+        printf("Pago realizado con exito. Continua con tu proceso de matricula\n\n");
+    }
+
+    printf("Selecciona tus materias a matricular\n");
+
+        for(int i = 0; i < 5; i++) {
+            printf("\nMateria %d:\n", i + 1);
+            printf("Tienes cupo disponible? (s/n): ");
+            scanf(" %c", &cupo_disponible);
+
+            if (cupo_disponible == 'n') {
+                printf("Por favor esperar si abren cupos o elegir otra materia.\n");
+            } else if (cupo_disponible == 's') {
+                printf("¡Ya quedaste inscrito en esta materia!\n");
+            }
+        }
+
+ printf("\n***¡Proceso de matrícula completado! Puedes checar tu horario.***\n");
+
+        return 0;
+    }
